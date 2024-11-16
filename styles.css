@@ -1,0 +1,149 @@
+/* Global Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #fcf5ef; /* Light background color */
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Page Heading */
+h1 {
+    color: #ff7235; /* Bright orange for headings */
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+/* Top Button for Homepage */
+#top-button,
+#bottom-button {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Buttons Styling */
+button {
+    background-color: #6db5ca; /* Teal button background */
+    color: #fcf5ef; /* Light text for contrast */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #b8d8e0; /* Light teal hover effect */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Dynamic List Styling */
+#item-list {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Center list on the page */
+}
+
+#item-list li {
+    background-color: #fff; /* White background for list items */
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #b8d8e0; /* Light border */
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#item-list li:hover {
+    background-color: #f0f8fa; /* Very light teal */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Form Styling */
+form {
+    background-color: #fff; /* White form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between form elements */
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333; /* Dark text for labels */
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b8d8e0; /* Light border */
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #6db5ca; /* Teal focus color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(109, 181, 202, 0.5); /* Soft focus glow */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    height: 100px; /* Default height for text area */
+}
+
+/* Layout Adjustments */
+#center-button,
+#top-button {
+    display: flex;
+    justify-content: center;
+}
+
+#bottom-button {
+    margin-top: 50px; /* Extra spacing below the form */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Add padding for small screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    form {
+        padding: 15px; /* Reduce form padding */
+    }
+
+    #item-list li {
+        padding: 10px; /* Adjust list item padding */
+    }
+}
